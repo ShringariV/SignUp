@@ -1,0 +1,148 @@
+@font-face {
+    font-family: "Norse";
+    src: url("Norse-Bold.otf");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.image-panel {
+    flex: 1;
+    background-image: url("photo-1585202900225-6d3ac20a6962.avif");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    padding: 20px;
+}
+
+.logo img {
+    height: 80px;
+}
+
+.logo h1 {
+    font-family: "Norse", sans-serif;
+    font-size: 4rem;
+}
+
+.photo-credit {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 0.8rem;
+}
+
+/* RIGHT PANEL */
+.content-panel {
+    flex: 1.5;
+    background-color: #f9fafb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro {
+    padding: 40px;
+    font-size: 1.1rem;
+    max-width: 600px;
+}
+
+.form-card {
+    background-color: white;
+    padding: 30px 40px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.form-card h2 {
+    margin-bottom: 20px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+label {
+    display: block;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #596d48;
+    box-shadow: 0 0 3px #596d48;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+.actions {
+    padding: 30px 40px;
+}
+
+button {
+    background-color: #596d48;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.actions p {
+    margin-top: 15px;
+}
+
+.actions a {
+    color: #596d48;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.actions a:hover {
+    text-decoration: underline;
+}

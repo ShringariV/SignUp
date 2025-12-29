@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Odin Sign-Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+
+    <div class="image-panel">
+        <div class="logo">
+            <img src="odin-lined.png" alt="Odin logo">
+            <h1>ODIN</h1>
+        </div>
+        <div class="photo-credit">
+            Photo by Halie West on Unsplash
+        </div>
+    </div>
+
+    <div class="content-panel">
+        <div class="intro">
+            <p>
+                This is not a real online service! You know you need something
+                like this in your life to help you realize your deepest dreams.
+                Sign up <strong>now</strong> to get started.
+            </p>
+            <p><em>You know you want to.</em></p>
+        </div>
+
+        <div class="form-card">
+            <h2>Let’s do this!</h2>
+
+            <form>
+                <div class="form-grid">
+                    <div>
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" required>
+                    </div>
+
+                    <div>
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" required>
+                    </div>
+
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+
+                    <div>
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                    </div>
+
+                    <div>
+                        <label for="password">Password</label>
+                        <input type="password" id="password" required>
+                    </div>
+
+                    <div>
+                        <label for="passwordconfirmation">Password Confirmation</label>
+                        <input type="password" id="passwordconfirmation" required>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="actions">
+            <button>Create Account</button>
+            <p>Already have an account? <a href="#">Log in</a></p>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
